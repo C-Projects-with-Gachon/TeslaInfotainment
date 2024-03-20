@@ -11,5 +11,9 @@
         <file>ui/RightScreen/NavigationSearchBox.qml</file>
         <file>ui/assets/search.png</file>
         <file>ui/BottomBar/HVACComponent.qml</file>
+        <file>ui/assets/audio1.png</file>
+        <file>ui/assets/audio2.png</file>
+        <file>ui/assets/mute.png</file>
+        <file>ui/BottomBar/VolumeControlComponent.qml</file>
     </qresource>
 </RCC>

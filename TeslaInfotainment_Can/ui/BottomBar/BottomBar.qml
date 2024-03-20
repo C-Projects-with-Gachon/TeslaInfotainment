@@ -36,15 +36,25 @@ Rectangle {
         hvacController: driverHVAC
     }
 
-    HVACComponent{
-        id: passengerHVACControl
-        anchors {
+    // HVACComponent{
+    //     id: passengerHVACControl
+    //     anchors {
+    //         top: parent.top
+    //         bottom: parent.bottom
+    //         right: volumeControl.left
+    //         rightMargin: 150
+    //     }
+
+    //     hvacController: passengerHVAC
+    // }
+
+    VolumeControlComponent{
+        id: volumeControl
+        anchors{
+            right: parent.right
+            rightMargin: 30
             top: parent.top
             bottom: parent.bottom
-            right: parent.right
-            rightMargin: 150
         }
-
-        hvacController: passengerHVAC
     }
 }

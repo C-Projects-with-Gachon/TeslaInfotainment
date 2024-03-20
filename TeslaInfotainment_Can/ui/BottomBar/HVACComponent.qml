@@ -4,6 +4,16 @@ Item {
     property string fontColor:"#817E7E"
     property var hvacController
 
+    width: 90 * (parent.width /1280)
+
+    Rectangle{
+        anchors{
+            left: decrementButton.left
+            right: incrementButton.right
+        }
+        Component.onCompleted: console.log(width)
+    }
+
     Rectangle {
         id:decrementButton
         anchors{
@@ -20,6 +30,7 @@ Item {
             text: "<"
             font.pixelSize: 12
         }
+
         MouseArea{
             anchors.fill:parent
             onClicked: hvacController.incrementTargetTemperature( - 1 )
